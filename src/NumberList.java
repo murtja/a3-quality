@@ -24,14 +24,13 @@ public class NumberList {
 			smallest = x;
 			largest = x;
 			isModified = true;
-		}
+		} else {
+			sum = sum + x;
+			count++;
 
-		sum = sum + x;
-		count++;
-		if (x > largest)
-			largest = x;
-		else if (x < smallest)
-			smallest = x;
+			smallest = Math.min(smallest, x);
+			largest = Math.max(largest, x);
+		}
 	}
 	
 	public int getLargest(){

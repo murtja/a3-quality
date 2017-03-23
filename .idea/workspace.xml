@@ -551,7 +551,7 @@
       <option name="presentableId" value="Default" />
       <updated>1490228760766</updated>
       <workItem from="1490228764968" duration="2735000" />
-      <workItem from="1490232179460" duration="1650000" />
+      <workItem from="1490232179460" duration="1738000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1490232263066</created>
@@ -574,11 +574,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490233451431</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added else statement to make sure only one branch executes and also used the min and max functions which look cleaner">
+      <created>1490233897844</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1490233897844</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4385000" />
+    <option name="totallyTimeSpent" value="4473000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1918" height="1038" extended-state="0" />
@@ -626,7 +633,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="fixed constructors and removed Data function since it is not useful based on the way the constructors  are now setup." />
     <MESSAGE value="added the case when the first number is added to addValue and also refactored second constructor to use addValue instead of doing the same thing" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the case when the first number is added to addValue and also refactored second constructor to use addValue instead of doing the same thing" />
+    <MESSAGE value="added else statement to make sure only one branch executes and also used the min and max functions which look cleaner" />
+    <option name="LAST_COMMIT_MESSAGE" value="added else statement to make sure only one branch executes and also used the min and max functions which look cleaner" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
