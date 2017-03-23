@@ -33,10 +33,17 @@ public class NumberList {
 		}
 	}
 	
-	public int getLargest(){
+	public int getLargest() throws NoNumbersSeenException{
+		if(!isModified){
+			throw new NoNumbersSeenException();
+		}
 		return largest;
 	}
-	public int getSmallest(){
+
+	public int getSmallest() throws NoNumbersSeenException{
+		if(!isModified){
+			throw new NoNumbersSeenException();
+		}
 		return smallest;
 	}
 }
