@@ -5,18 +5,23 @@ public class NumberList {
 	private int sum;
 	private int smallest = Integer.MIN_VALUE;
 	private int largest = Integer.MAX_VALUE;
-	
-	public void Data(){
+
+	private boolean isModified;
+
+	public NumberList(){
+		isModified = false;
 		count = 0;
 		sum = 0;
-		smallest = 0;
-		largest = 0;
 	}
 	
 	public NumberList(int x){
-		smallest = Math.min(smallest, x);
-		largest = Math.max(largest, x);	
+		isModified = true;
+		count = 1;
+		sum = x;
+		smallest = x;
+		largest = x;
 	}
+
 	public void addValue(int x){
 		sum = sum + x;
 		count++;
