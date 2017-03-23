@@ -6,23 +6,26 @@ public class NumberList {
 	private int smallest = Integer.MIN_VALUE;
 	private int largest = Integer.MAX_VALUE;
 
-	private boolean isModified;
+	private boolean isModified = false;
 
 	public NumberList(){
-		isModified = false;
 		count = 0;
 		sum = 0;
 	}
 	
 	public NumberList(int x){
-		isModified = true;
-		count = 1;
-		sum = x;
-		smallest = x;
-		largest = x;
+		addValue(x);
 	}
 
 	public void addValue(int x){
+		if(!isModified){
+			sum = x;
+			count = 1;
+			smallest = x;
+			largest = x;
+			isModified = true;
+		}
+
 		sum = sum + x;
 		count++;
 		if (x > largest)
