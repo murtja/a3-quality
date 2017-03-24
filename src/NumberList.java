@@ -46,4 +46,12 @@ public class NumberList {
 		}
 		return smallest;
 	}
+
+	public int getCount() {
+		return count;
+	}
+
+	public int getSum() {
+		return sum;
+	}
 }
